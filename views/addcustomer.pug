@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Add customer
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+  body
+    a.form-control
+        h1.display-4 New customer
+        form(action='/addcustomer', method='POST')
+            div.form-group
+                input(type="number", name="id", placeholder="Id")
+            div.form-group
+                input(type="text", name="firstname", placeholder="Firstname")
+            div.form-group
+                input(type="text", name="lastname", placeholder="Lastname")
+            div.form-group
+                input(type="text", name="email", placeholder="Email")
+            div.form-group
+                input(type="number", name="phone", placeholder="Phone") 
+            div 
+                input(type="submit", value="Add").btn.btn-primary
